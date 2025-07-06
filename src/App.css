@@ -16,24 +16,8 @@ body {
   font-family: 'Roboto', sans-serif;
   color: #fff;
   background-color: #281d1d;
-  overflow-x: hidden !important;
-  overflow-y: scroll;
 }
 
-/* Prevent horizontal overflow during animations */
-* {
-  overflow-x: hidden;
-}
-
-/* Ensure smooth animations without horizontal overflow */
-.home,
-.statistics,
-.utilities,
-.progress,
-.questions,
-.plans-section {
-  overflow-x: hidden;
-}
 ::selection {
   color: #fff;
   background-color: var(--secondary-color);
@@ -99,4 +83,30 @@ button {
   p {
     margin: 2rem 0 4rem;
   }
+}
+
+/* Custom Scrollbar Styles */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1313;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--secondary-color);
+  border-radius: 6px;
+  border: 2px solid #1a1313;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--main-color);
+}
+
+/* Firefox scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--secondary-color) #1a1313;
 }

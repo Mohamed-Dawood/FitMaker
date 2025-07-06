@@ -17,8 +17,6 @@
   border: none;
   outline: none;
   cursor: pointer;
-  max-width: calc(100vw - 4rem);
-  margin: 0 auto;
 }
 .fixed-message-btn:hover {
   background: var(--main-color);
@@ -28,12 +26,10 @@
 @media (max-width: 700px) {
   .fixed-message-btn {
     right: 0.5rem;
-    bottom: 50%;
-    transform: translateY(50%);
+    bottom: 1rem;
     width: 48px;
     height: 48px;
     font-size: 1.2rem;
-    border-radius: 50% 0 0 50%;
-    max-width: 48px;
+    border-radius: 50%;
   }
 } 
