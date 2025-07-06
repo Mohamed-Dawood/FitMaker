@@ -19,6 +19,21 @@ body {
   overflow-x: hidden !important;
   overflow-y: scroll;
 }
+
+/* Prevent horizontal overflow during animations */
+* {
+  overflow-x: hidden;
+}
+
+/* Ensure smooth animations without horizontal overflow */
+.home,
+.statistics,
+.utilities,
+.progress,
+.questions,
+.plans-section {
+  overflow-x: hidden;
+}
 ::selection {
   color: #fff;
   background-color: var(--secondary-color);

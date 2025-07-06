@@ -3,7 +3,6 @@ import './Progress.css';
 import frontImage1 from '../images/WhatsApp Image 2025-01-23 at 20.07.43_2b27d14b.jpg';
 import backImage1 from '../images/utilities.jpg';
 import { useTranslation, Trans } from 'react-i18next';
-import { motion } from 'framer-motion';
 
 const defaultCardData = [
   {
@@ -31,13 +30,9 @@ function Progress() {
   // You can add translation for cardData if needed, for now fallback to defaultCardData
   const cardData = defaultCardData;
   return (
-    <motion.div
+    <div
       id="progress"
       className="progress"
-      initial={{ opacity: 0, x: 80 }}
-      whileInView={{ opacity: 1, x: 0 }}
-      viewport={{ once: true, amount: 0.3 }}
-      transition={{ duration: 0.7, ease: 'easeOut' }}
     >
       <div className="container">
         <div className="section-header">
@@ -59,7 +54,7 @@ function Progress() {
           ))}
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 }
 

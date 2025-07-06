@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { motion } from 'framer-motion';
 import './Plans.css';
 
 const planKeys = ['pro', 'custom', 'beginner'];
@@ -16,14 +15,10 @@ function Plans() {
     filter === 'all' ? planKeys : [filter];
 
   return (
-    <motion.section
+    <section
       id="plans"
       className="plans-section"
       dir={isArabic ? 'rtl' : 'ltr'}
-      initial={{ opacity: 0, x: -80 }}
-      whileInView={{ opacity: 1, x: 0 }}
-      viewport={{ once: true, amount: 0.3 }}
-      transition={{ duration: 0.7, ease: 'easeOut' }}
     >
       <div className="container">
         <h2 className="plans-title">
@@ -100,7 +95,7 @@ function Plans() {
           })}
         </div>
       </div>
-    </motion.section>
+    </section>
   );
 }
 

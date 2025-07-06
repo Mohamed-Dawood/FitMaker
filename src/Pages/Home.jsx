@@ -1,18 +1,13 @@
 import { useTranslation, Trans } from 'react-i18next';
-import { motion } from 'framer-motion';
 import Abdalah from '../images/Abdalah.png';
 import './Home.css';
 
 function Home() {
   const { t } = useTranslation();
   return (
-    <motion.div
+    <div
       id="home"
       className="home"
-      initial={{ opacity: 0, y: 60 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.3 }}
-      transition={{ duration: 0.7, ease: 'easeOut' }}
     >
       <div className="container">
         <div className="text">
@@ -31,7 +26,7 @@ function Home() {
           <img src={Abdalah} alt="Abdalah" />
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 }
 
