@@ -55,9 +55,9 @@ function Footer() {
   const programsLinks = t('footer.programsLinks', { returnObjects: true });
   const contactInfo = t('footer.contactInfo', { returnObjects: true });
   const designerName = isArabic
-    ? 'محمد بسيوني داوود'
+    ? 'محمد بسيوني داود'
     : 'Mohamed Basyouni Dawood';
-  const attributionText = isArabic ? 'تصميم' : 'Design by';
+  const attributionText = isArabic ? 'تصميم المهندس' : 'Design by Engineer';
 
   return (
     <footer className="footer-section" dir={isArabic ? 'rtl' : 'ltr'}>
