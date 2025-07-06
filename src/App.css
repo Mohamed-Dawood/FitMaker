@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100..900&display=swap');
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --main-color: #cd4e17;
+  --secondary-color: #d90a14;
+  --main-transition: 0.3s;
+
+  --primary-text-color: #888888;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+  background-color: #281d1d;
+  overflow-x: hidden;
+}
+::selection {
+  color: #fff;
+  background-color: var(--secondary-color);
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+button {
+  background: none;
+  padding: 0.5rem 0.8rem;
+  border-radius: 12px;
+  border: none;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.home,
+.statistics,
+.utilities,
+.progress,
+.questions {
+  padding: 2rem 0;
+}
+
+.section-header {
+  text-align: center;
+  display: block;
+  h2 {
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    span {
+      color: var(--secondary-color);
+    }
+  }
+  p {
+    margin: 2rem 0 4rem;
+  }
+}

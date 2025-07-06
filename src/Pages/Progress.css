@@ -1,0 +1,13 @@
+.progress {
+  .cards {
+    display: flex;
+    gap: 3rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 4rem 0;
+
+    @media (max-width: 768px) {
+      justify-content: center;
+    }
+  }
+}
