@@ -16,7 +16,8 @@ body {
   font-family: 'Roboto', sans-serif;
   color: #fff;
   background-color: #281d1d;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
+  overflow-y: scroll;
 }
 ::selection {
   color: #fff;

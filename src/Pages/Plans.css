@@ -228,11 +228,13 @@
   .plans-cards {
     flex-direction: column;
     gap: 1.5rem;
+    padding: 0 1rem;
   }
   .plan-card {
     min-width: 0;
     max-width: 100%;
     width: 100%;
+    margin: 0 auto;
   }
   .plans-filter-row {
     flex-direction: column;
@@ -240,5 +242,17 @@
     gap: 0.5rem;
     margin-top: 1.2rem;
     margin-bottom: 1.5rem;
+  }
+  .plans-toggle-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .plans-title {
+    font-size: 2rem;
+    padding: 0 1rem;
+  }
+  .plans-desc {
+    padding: 0 1rem;
   }
 }

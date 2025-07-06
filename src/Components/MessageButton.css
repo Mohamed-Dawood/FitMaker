@@ -17,6 +17,8 @@
   border: none;
   outline: none;
   cursor: pointer;
+  max-width: calc(100vw - 4rem);
+  margin: 0 auto;
 }
 .fixed-message-btn:hover {
   background: var(--main-color);
